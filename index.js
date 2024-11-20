@@ -13,7 +13,7 @@ const createStylesPLP = () => {
     const link = document.createElement('LINK')
     link.rel = "stylesheet";
     link.id = "PLPStyle";
-    link.href = ".https://cdn.jsdelivr.net/gh/mudi-3D/PLPensueno@latest/index.css";
+    link.href = "https://cdn.jsdelivr.net/gh/mudi-3D/PLPensueno@latest/index.css";
     document.head.appendChild(link);
 };
 
