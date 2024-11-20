@@ -3,9 +3,7 @@
 let counterSearch = 0;
 
 /** Contenido de la imagen icono identificador 3D  */
-let ImageElement = document.createElement('IMG');
-ImageElement.src = "https://cdn.jsdelivr.net/gh/mudi-3D/PLPensueno@latest/iconPLP.png";
-ImageElement.alt = "Ícono identificador PLP";
+let ImageElement = document.createElement('DIV');
 ImageElement.classList.add('icon3DPLP');
 
 const createStylesPLP = () => {
