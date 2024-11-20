@@ -1,3 +1,4 @@
+import SKUS from "https://cdn.jsdelivr.net/gh/mudi-3D/PLPensueno@latest/skus.js";
 
 /** Contador para detener la busqueda y revisión de las "cards" */
 let counterSearch = 0;
@@ -24,12 +25,17 @@ const searchCards = () => {
 
     for (i = 0; i < allCards.length; i++) {
 
-        /** Contenido de la imagen icono identificador 3D  */
-        let ImageElement = document.createElement('DIV');
-        ImageElement.classList.add('icon3DPLP');
+        let numberSKu = allCards[i].getAttribute("data-product_id");
 
-        const father = allCards[i].parentElement;
-        father.appendChild(ImageElement);
+        if (SKUS.includes(numberSKu)) {
+            /** Contenido de la imagen icono identificador 3D  */
+            let ImageElement = document.createElement('DIV');
+            ImageElement.classList.add('icon3DPLP');
+
+            const father = allCards[i].parentElement;
+            father.appendChild(ImageElement);
+        }
+
     };
 
 
