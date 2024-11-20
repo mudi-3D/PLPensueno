@@ -4,7 +4,7 @@ let counterSearch = 0;
 
 /** Contenido de la imagen icono identificador 3D  */
 let ImageElement = document.createElement('IMG');
-ImageElement.src = "./iconPLP.png";
+ImageElement.src = "https://cdn.jsdelivr.net/gh/mudi-3D/PLPensueno@latest/iconPLP.png";
 ImageElement.alt = "Ícono identificador PLP";
 ImageElement.classList.add('icon3DPLP');
 
@@ -13,13 +13,13 @@ const createStylesPLP = () => {
     const link = document.createElement('LINK')
     link.rel = "stylesheet";
     link.id = "PLPStyle";
-    link.href = "./index.css";
+    link.href = ".https://cdn.jsdelivr.net/gh/mudi-3D/PLPensueno@latest/index.css";
     document.head.appendChild(link);
 };
 
 const searchCards = () => {
 
-    if (counterSearch === 10000) return;
+    if (counterSearch === 1000) return;
 
     const allCards = document.querySelectorAll('[data-product_id]')
 
@@ -31,9 +31,10 @@ const searchCards = () => {
     for (i = 0; i < allCards.length; i++) {
         const father = allCards[i].parentElement;
         father.appendChild(ImageElement);
-    }
+    };
 
 
 };
 
 createStylesPLP();
+searchCards();
