@@ -2,10 +2,6 @@
 /** Contador para detener la busqueda y revisión de las "cards" */
 let counterSearch = 0;
 
-/** Contenido de la imagen icono identificador 3D  */
-let ImageElement = document.createElement('DIV');
-ImageElement.classList.add('icon3DPLP');
-
 const createStylesPLP = () => {
     if (document.head.querySelector('#PLPStyle')) return;
     const link = document.createElement('LINK')
@@ -27,6 +23,11 @@ const searchCards = () => {
     };
 
     for (i = 0; i < allCards.length; i++) {
+
+        /** Contenido de la imagen icono identificador 3D  */
+        let ImageElement = document.createElement('DIV');
+        ImageElement.classList.add('icon3DPLP');
+
         const father = allCards[i].parentElement;
         father.appendChild(ImageElement);
     };
