@@ -23,7 +23,7 @@ const searchCards = () => {
         requestAnimationFrame(searchCards);
     };
 
-    for (i = 0; i < allCards.length; i++) {
+    for ( let i = 0; i < allCards.length; i++) {
 
         let numberSKu = allCards[i].getAttribute("data-product_id");
 
