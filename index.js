@@ -28,7 +28,7 @@ console.log('Buscando cards')
     for ( let i = 0; i < allCards.length; i++) {
 
         let numberSKu = allCards[i].getAttribute("data-product_id");
-        console.log(numberSKU)
+        console.log(numberSKu)
 
         if (SKUS.includes(numberSKu)) {
             console.log('enciontramos una card ')
