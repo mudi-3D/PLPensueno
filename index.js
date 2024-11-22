@@ -63,5 +63,5 @@ console.log('Buscando cards')
 
 createStylesPLP();
 
-setTimeout(()=>{ searchCards(); },3000)
+setTimeout(()=>{ searchCards(); },1500)
 
