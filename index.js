@@ -14,6 +14,8 @@ const createStylesPLP = () => {
 
 const searchCards = () => {
 
+console.log('Buscando cards')
+
     if (counterSearch === 1000) return;
 
     const allCards = document.querySelectorAll('[data-product_id]')
@@ -28,6 +30,7 @@ const searchCards = () => {
         let numberSKu = allCards[i].getAttribute("data-product_id");
 
         if (SKUS.includes(numberSKu)) {
+            console.log('enciontramos una card ')
             /** Contenido de la imagen icono identificador 3D  */
             let ImageElement = document.createElement('DIV');
             ImageElement.classList.add('icon3DPLP');
@@ -42,4 +45,6 @@ const searchCards = () => {
 };
 
 createStylesPLP();
-searchCards();
+
+setTimeout(()=>{ searchCards(); },3000)
+
