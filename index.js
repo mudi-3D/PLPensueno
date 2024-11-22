@@ -19,6 +19,7 @@ console.log('Buscando cards')
     if (counterSearch === 1000) return;
 
     const allCards = document.querySelectorAll('[data-product_id]')
+    console.log(allCards)
 
     if (allCards.length == 0) {
         counterSearch++;
