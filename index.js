@@ -12,7 +12,7 @@ const SKUS = [
     "Mueble_Estocolmo_Poltrona", "Mueble_Portugal_Sofa", "2093", 
     "mueble_Rosemberg", "Mueble_Rochester", "Cama_nido_niño", 
     "Cama_nido_niña", "1416", "1463", "1492", "1257", "1614", "830", 
-    "Colchon_Kids", "738", "867"
+    "Colchon_Kids", "738", "867", "1457" 
 ];
 
 /** Contador para detener la busqueda y revisión de las "cards" */
